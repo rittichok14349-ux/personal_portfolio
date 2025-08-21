@@ -1,6 +1,20 @@
 
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* เพิ่ม custom styles เพิ่มเติมที่นี่ได้ */
 body {
-  background-color: rgb(255, 255, 255);
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f9fafb;
+}
+
+a {
+  transition: color 0.2s ease-in-out;
+}
+
+h1, h2, h3 {
+  scroll-margin-top: 100px;
 }

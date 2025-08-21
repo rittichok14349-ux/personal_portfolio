@@ -1,15 +1,13 @@
-import React from 'react';
-
 const projects = [
   {
-    title: 'Travel Website',
-    description: 'A travel agency landing page with clean UI design and animations.',
+    title: 'Travel Landing Page',
+    description: 'เว็บไซต์สำหรับบริษัทท่องเที่ยว ใช้ React และ Tailwind CSS',
     github: 'https://github.com/rittichok14349-ux/travel-landing',
     demo: 'https://travel-demo.netlify.app'
   },
   {
     title: 'To-Do App',
-    description: 'A minimalist to-do app for task management, built using React.',
+    description: 'แอปจัดการงานที่ออกแบบ UI ให้ใช้งานง่ายบนมือถือ',
     github: 'https://github.com/rittichok14349-ux/todo-app',
     demo: 'https://todo-rittichok.netlify.app'
   }
@@ -17,7 +15,7 @@ const projects = [
 
 const Projects = () => (
   <section id="projects" className="py-20 px-6 bg-white">
-    <h2 className="text-4xl font-bold text-center mb-10">Projects</h2>
+    <h2 className="text-4xl font-bold text-center mb-10">ผลงาน</h2>
     <div className="grid md:grid-cols-2 gap-8">
       {projects.map(project => (
         <div key={project.title} className="border rounded-lg p-6 shadow hover:shadow-md transition">
@@ -32,5 +30,4 @@ const Projects = () => (
     </div>
   </section>
 );
-
 export default Projects;

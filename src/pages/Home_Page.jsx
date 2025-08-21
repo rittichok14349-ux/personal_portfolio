@@ -1,45 +1,13 @@
-import React from "react";
-import Button from "../components/Button";
-import CardList from "../components/CardList";
-import Header from "../components/Header";
+import React from 'react';
 
-const Home = () => {
-  return (
-    <>
-      <section
-        className="h-screen bg-cover bg-center flex items-center justify-between text-white"
-        style={{
-          backgroundImage:
-            "url(https://cdn.pixabay.com/photo/2022/06/21/07/50/dogs-7275314_960_720.jpg)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="container absolute top-50 right-0 left-100 mx-auto p-4">
-          <h2 className="text-5xl font-bold mb-4 text-blue-800">
-            Welcome to the Animal Paradise
-          </h2>
-          <p className="text-white mb-6 text-lg font-semibold">
-            Browse through our collection of cards and discover amazing designs.
-          </p>
-          <Button nameButton="Explore Cards" />
-        </div>
-      </section>
-      <main className="container mx-auto my-8 p-4">
-        <h2 className="text-2xl font-semibold mb-4">
-          Card Gallery Reccommended
-        </h2>
-        <p className="text-gray-700 mb-4">
-          Explore our collection of cards showcasing various items.
-        </p>
-        <hr className="text-purple-200" />
-       <CardList />
-        <div className="flex justify-end mt-4">
-          <Button nameButton="Load More" />
-        </div>
-      </main>
-    </>
-  );
-};
+const Home_Page = () => (
+  <section className="bg-sky-500 text-white py-24 text-center">
+    <h1 className="text-5xl font-bold">Hi, I’m Rittichok</h1>
+    <p className="text-xl mt-4">A passionate Frontend Developer who loves building great UX/UI.</p>
+    <a href="#projects" className="mt-8 inline-block bg-white text-sky-600 px-6 py-3 rounded-lg font-semibold hover:bg-sky-100 transition">
+      View My Work
+    </a>
+  </section>
+);
 
-export default Home;
+export default Home_Page;
